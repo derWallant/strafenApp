@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<edmx:Edmx Version="1.0"
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm"
+			Namespace="sport.strafenkatalog">
+			<EntityType Name="Team">
+				<Key>
+					<PropertyRef Name="id" />
+				</Key>
+				<Property Name="id" Type="Edm.Int32" />
+				<Property Name="name" Type="Edm.String" />
+			</EntityType>
+			<EntityType Name="Player">
+				<Key>
+					<PropertyRef Name="id" />
+				</Key>
+				<Property Name="id" Type="Edm.Int32" />
+				<Property Name="firstname" Type="Edm.String" />
+				<Property Name="lastname" Type="Edm.String" />
+				<Property Name="userId" Type="Edm.Int32" />
+				<Property Name="teamId" Type="Edm.Int32" />
+			</EntityType>
+			<EntityType Name="User">
+				<Key>
+					<PropertyRef Name="id" />
+				</Key>
+				<Property Name="id" Type="Edm.Int32" />
+				<Property Name="username" Type="Edm.String" />
+				<Property Name="firstname" Type="Edm.String" />
+				<Property Name="lastname" Type="Edm.String" />
+			</EntityType>
+			<EntityType Name="Catalogue">
+				<Key>
+					<PropertyRef Name="id" />
+				</Key>
+				<Property Name="id" Type="Edm.Int32" />
+				<Property Name="teamId" Type="Edm.Int32" />
+				<Property Name="description" Type="Edm.String" />
+			</EntityType>
+			<EntityType Name="Punishment">
+				<Key>
+					<PropertyRef Name="id" />
+				</Key>
+				<Property Name="id" Type="Edm.Int32" />
+				<Property Name="catalogueId" Type="Edm.Int32" />
+				<Property Name="name" Type="Edm.String" />
+				<Property Name="description" Type="Edm.String" />
+				<Property Name="amount" Type="Edm.Decimal" />
+				<Property Name="type" Type="Edm.Int16" />
+				<Property Name="punishment" Type="Edm.String" />
+			</EntityType>
+			<EntityType Name="Sentence">
+				<Key>
+					<PropertyRef Name="id" />
+				</Key>
+				<Property Name="id" Type="Edm.Int32" />
+				<Property Name="playerId" Type="Edm.Int32" />
+				<Property Name="punishmentId" Type="Edm.Int32" />
+				<Property Name="date" Type="Edm.DateTime" />
+				<Property Name="clearedOffAt" Type="Edm.Date" />
+				<Property Name="clearedOffTo" Type="Edm.Int32" />
+				<Property Name="comment" Type="Edm.String" />
+			</EntityType>
+			<EntityContainer Name="Container">
+				<EntitySet Name="Teams"
+					EntityType="sport.strafenkatalog.Team" />
+				<EntitySet Name="Players"
+					EntityType="sport.strafenkatalog.Player" />
+				<EntitySet Name="Users"
+					EntityType="sport.strafenkatalog.User" />
+				<EntitySet Name="Catalogues"
+					EntityType="sport.strafenkatalog.Catalogue" />
+				<EntitySet Name="Punishments"
+					EntityType="sport.strafenkatalog.Punishment" />
+				<EntitySet Name="Sentences"
+					EntityType="sport.strafenkatalog.Sentence" />
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

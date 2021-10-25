@@ -1,0 +1,48 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="sport.strafenApp.controller.Sentences"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.f"
+	xmlns:fb="sap.ui.comp.filterbar" xmlns:vm="sap.ui.comp.variants"
+	xmlns:smartFilterBar="sap.ui.comp.smartfilterbar">
+	<Table id="responsiveTable" mode="MultiSelect" growing="true"
+		growingScrollToLoad="true"
+		items="{/Sentences}">
+		<columns>
+			<Column>
+				<Text text="Spieler" />
+			</Column>
+			<Column>
+				<Text text="Datum" />
+			</Column>
+			<Column>
+				<Text text="Strafe" />
+			</Column>
+			<Column>
+				<Text text="Betrag" />
+			</Column>
+			<Column>
+				<Text text="sonstige Bestrafung" />
+			</Column>
+			<Column>
+				<Text text="Kommentar" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<Text text="{player/firstname} {player/lastname}" />
+					<Text text="{
+				        path: 'date',
+				        type: 'sap.ui.model.type.Date',
+				        formatOptions: {
+				          pattern: 'dd.MM.yyyy'
+				        }
+				      }" />
+					<Text text="{punishment/name}" />
+					<Text text="{punishment/amount}" />
+					<Text text="{punishment/punishment}" />
+					<Text text="{comment}" />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>

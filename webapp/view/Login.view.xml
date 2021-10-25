@@ -1,0 +1,19 @@
+<core:View xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="sport.strafenApp.controller.login"
+	xmlns:f="sap.ui.layout.form" xmlns:html="http://www.w3.org/1999/xhtml">
+	<VBox class="sapUiSmallMargin" alignItems="Center" justifyContent="Center">
+		<f:SimpleForm id="SimpleFormToolbar" editable="true"
+			layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="3"
+			labelSpanM="4" labelSpanS="12" adjustLabelSpan="false"
+			emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0"
+			columnsXL="1" columnsL="1" columnsM="1"
+			singleContainerFullSize="false">
+			<f:content>
+				<Image src="img/logo_sg.png" decorative="true" width="50%"/>
+				<Input id="userID" value="User123" />
+				<Button text="Login" press="btnClicked" />
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+</core:View>

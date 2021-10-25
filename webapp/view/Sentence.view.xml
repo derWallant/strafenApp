@@ -1,0 +1,43 @@
+<mvc:View 
+	xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" 
+	controllerName="sport.strafenApp.controller.Sentence"
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:f="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout">
+	<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormToolbar"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="4"
+			labelSpanL="3"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="4"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false">
+			<f:content>
+				<Label text="Spieler" />
+				<ComboBox items="{/Players}" >
+					<core:Item key="{id}" text="{firstname} {lastname}" />
+				</ComboBox>			
+				<Label text="Datum" />
+				<DatePicker
+					id="dp_date"
+					class="sapUiSmallMarginBottom"
+					value="{date}"/>
+				<Label text="Strafe" />
+				<ComboBox items="{/Punishments}" >
+					<core:Item key="{id}" text="{name} - {amount}" />
+				</ComboBox>						
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+</mvc:View>

@@ -1,0 +1,27 @@
+[{
+		"id": 1,
+		"playerId": 1,
+		"punishmentId": 1,
+		"date": "\/Date(1634327191621)\/",
+		"clearedOffAt": "\/Date(1634327191621)\/",
+		"clearedOffTo": 1,
+		"comment": "Test 4"
+	},
+	{
+		"id": 2,
+		"playerId": 1,
+		"punishmentId": 1,
+		"date": "\/Date(1634327191621)\/",
+		"clearedOffAt": "\/Date(1634326840)\/",
+		"clearedOffTo": 1,
+		"comment": "Test 4"
+	},
+	{
+		"id": 3,
+		"playerId": 1,
+		"punishmentId": 1,
+		"date": "\/Date(1634327191621)\/",
+		"clearedOffAt": "\/Date(1634327191621)\/",
+		"clearedOffTo": 1,
+		"comment": "Test 4"
+	}]

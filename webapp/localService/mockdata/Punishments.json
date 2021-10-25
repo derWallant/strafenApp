@@ -1,0 +1,34 @@
+[
+	{
+		"id": 1,
+		"catalogueId": 1,
+		"name": "Handy klingelt bei einer Sitzung / Ansprache",
+		"amount": "10,00",
+		"type": 1,
+		"punishment": "10,00"
+	},
+	{
+		"id": 2,
+		"catalogueId": 1,
+		"name": "Handy klingelt bei einer Sitzung / Ansprache",
+		"amount": "1 Kiste Bier",
+		"type": 2,
+		"punishment": "1 Kiste Bier"
+	},
+	{
+		"id": 3,
+		"catalogueId": 1,
+		"name": "Rauchen / Alkohol im Trikot",
+		"amount": "10,00",
+		"type": 1,
+		"punishment": "10,00"
+	},
+	{
+		"id": 4,
+		"catalogueId": 1,
+		"name": "Rauchen / Alkohol im Trikot",
+		"amount": "1 Kiste Bier",
+		"type": 2,
+		"punishment": "1 Kiste Bier"
+	}
+]

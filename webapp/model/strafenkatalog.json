@@ -1,0 +1,66 @@
+{
+	"Sentences":[
+		{	
+		"id": 1,
+		"player":{
+			"id":1,
+			"firstname":"Philipp",
+			"lastname":"Schwarz",
+			"user":{
+				"id": 1,
+				"username": "derWallant",
+				"firstname": "Philipp",
+				"lastname": "Schwarz"	
+			},
+			"team":{
+				"id": 1,
+				"name": "SG Ölbronn-Dürrn"
+			}
+		},
+		"punishment":{
+			"id": 1,
+			"catalogueId": 2,
+			"name": "Handy klingelt bei einer Sitzung / Ansprache",
+			"amount": "10,00",
+			"type": 1,
+			"punishment": null
+			
+		},
+		"date": "2021-09-01",
+		"clearedOffAt": "2021-09-02",
+		"clearedOffTo": 1,
+		"comment": "Test 4"
+	},
+	{	
+		"id": 2,
+		"player":{
+			"id":1,
+			"firstname":"Philipp",
+			"lastname":"Schwarz",
+			"user":{
+				"id": 1,
+				"username": "derWallant",
+				"firstname": "Philipp",
+				"lastname": "Schwarz"	
+			},
+			"team":{
+				"id": 1,
+				"name": "SG Ölbronn-Dürrn"
+			}
+		},
+		"punishment":{
+			"id": 2,
+			"catalogueId": 2,
+			"name": "Handy klingelt bei einer Sitzung / Ansprache",
+			"amount": null,
+			"type": 2,
+			"punishment": "1 Kiste Bier"
+			
+		},
+		"date": "2021-09-01",
+		"clearedOffAt": "2021-09-02",
+		"clearedOffTo": 1,
+		"comment": "Test 4"
+	}
+	]
+}

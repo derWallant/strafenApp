@@ -1,0 +1,35 @@
+{
+	"selectedKey": "Login",
+	"navigation": [
+		{
+			"title": "Login",
+			"icon": "sap-icon://account",
+			"key": "Login",
+			"index": 0
+		},
+		{
+			"title": "Bazahlte Strafen",
+			"icon": "sap-icon://paid-leave",
+			"key": "SentencesPayed",
+			"index": 1
+		},
+		{
+			"title": "Strafe eintragen",
+			"icon": "sap-icon://group",
+			"key": "Sentence",
+			"index": 2
+		},
+		{
+			"title": "User",
+			"icon": "sap-icon://account",
+			"key": "Users",
+			"index": 3
+		},
+		{
+			"title": "Strafenkatalog",
+			"icon": "sap-icon://activity-items",
+			"key": "Catalogue",
+			"index": 4
+		}
+	]
+}

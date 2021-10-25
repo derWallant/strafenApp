@@ -1,0 +1,23 @@
+[
+	{
+		"id": 1,
+		"firstname": "Philipp",
+		"lastname": "Schwarz",
+		"userId": 1,
+		"teamId": 1
+	},
+	{
+		"id": 2,
+		"firstname": "Costa",
+		"lastname": "Fastgarnix",
+		"userId": 2,
+		"teamId": 1
+	},
+	{
+		"id": 3,
+		"firstname": "Stefan",
+		"lastname": "Carsten",
+		"userId": 3,
+		"teamId": 1
+	}	
+]

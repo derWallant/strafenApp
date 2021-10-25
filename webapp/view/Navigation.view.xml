@@ -1,0 +1,60 @@
+<mvc:View
+	controllerName="sport.strafenApp.controller.Navigation"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:tnt="sap.tnt"
+	height="100%">
+	<tnt:ToolPage id="toolPage" sideExpanded="false">
+		<tnt:header>
+			<tnt:ToolHeader>
+				<Button
+					id="sideNavigationToggleButton"
+					icon="sap-icon://menu2"
+					type="Transparent"
+					press=".onSideNavButtonPress">
+					<layoutData>
+						<OverflowToolbarLayoutData priority="NeverOverflow" />
+					</layoutData>
+				</Button>
+			</tnt:ToolHeader>
+		</tnt:header>
+		<tnt:sideContent>
+			<tnt:SideNavigation
+				expanded="false"
+				itemSelect=".onItemSelect">
+				<tnt:NavigationList id="navList" items="{path: 'navigation>/navigation'}">
+					<tnt:NavigationListItem
+						text="{navigation>title}"
+						icon="{navigation>icon}"
+						enabled="{navigation>enabled}"
+						expanded="{navigation>expanded}"
+						key="{navigation>index}">
+					</tnt:NavigationListItem>
+				</tnt:NavigationList>
+				<tnt:fixedItem>
+					<tnt:NavigationList items="{path: 'navigation>/fixedNavigation', templateShareable: 'false'}">
+						<tnt:NavigationListItem text="{navigation>title}" icon="{navigation>icon}" />
+					</tnt:NavigationList>
+				</tnt:fixedItem>
+			</tnt:SideNavigation>
+		</tnt:sideContent>
+		<tnt:mainContents>
+			<NavContainer id="pageContainer" height="100%" initialPage="Login">
+				<pages>
+					<Page title="offene Strafen" id="Sentences" showSubHeader="false" showFooter="false" enableScrolling="true">
+						<mvc:XMLView viewName="sport.strafenApp.view.Sentences" ></mvc:XMLView>
+					</Page>
+					<Page title="bezahlte Strafen" id="SentencesPayed" showSubHeader="false" showFooter="false" enableScrolling="false">
+						<mvc:XMLView viewName="sport.strafenApp.view.Sentences"  ></mvc:XMLView>
+					</Page>	
+					<Page title="Strafe eintragen" id="Sentence" showSubHeader="false" showFooter="false" enableScrolling="false">
+						<mvc:XMLView viewName="sport.strafenApp.view.Sentence"  ></mvc:XMLView>
+					</Page>
+					<Page title="Anmelden" id="Login" showSubHeader="false" showFooter="false" enableScrolling="false">
+						<mvc:XMLView viewName="sport.strafenApp.view.Login"  ></mvc:XMLView>
+					</Page>												
+				</pages>
+			</NavContainer>
+		</tnt:mainContents>
+	</tnt:ToolPage>
+</mvc:View>
